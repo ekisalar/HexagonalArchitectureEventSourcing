@@ -42,7 +42,7 @@ The project is built on a Hexagonal (Ports and Adapters) Architecture and is org
 - BlogManager.Adapter.EventStore.Tests
 - BlogManager.Tests.Shared
 
-The API project serves as the driver side of the application, while the PostgreSQL and Logger projects function as the driven sides.
+The API project serves as the driver side of the application, while the PostgreSQL, EventStore and Logger projects function as the driven sides.
 
 #### Key Features:
 - In line with Hexagonal Architecture, the Core project is framework-agnostic and fully independent.
