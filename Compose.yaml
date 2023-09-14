@@ -1,0 +1,40 @@
+version: '3'
+services:
+  postgres:
+    container_name: postgres
+    image: postgres:latest
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U admin"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=123456
+      - POSTGRES_DB=BlogDB
+    ports:
+      - "5432:5432"
+
+  esdb-node:
+    container_name: esdb-node
+    image: ghcr.io/eventstore/eventstore:20.6.1-alpha.0.69-arm64v8
+    ports:
+      - "2113:2113"
+      - "1113:1113"
+    command:
+      - "--insecure"
+      - "--run-projections=All"
+      - "--enable-external-tcp"
+      - "--enable-atom-pub-over-http"
+
+  app:
+    build: .
+    ports:
+      - "8080:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Test
+    depends_on:
+      postgres:
+        condition: service_healthy
+      esdb-node:
+        condition: service_started

@@ -1,0 +1,25 @@
+<ArchitectureGraph>
+  <Module Identifier="7E5BBCB4-A417-4933-B923-5E8700D52D51" Name="BlogManager.Core" />
+  <Module Identifier="15E72CA0-CFBA-4287-94E1-28E36A89D098" Name="BlogManager.Adapter.Api" />
+  <Module Identifier="41935672-E90D-4389-A133-A52446D2A7D6" Name="BlogManager.Adapter.PostgreSQL" />
+  <Module Identifier="DD90A7BE-E6D2-4AA7-BD41-8DF4D7B53C61" Name="BlogManager.Adapter.Application" />
+  <Module Identifier="7658A5F0-D343-4B4D-8CE5-DBD2B14E8C2A" Name="BlogManager.Core.Tests" />
+  <Module Identifier="09D01FC4-4AE6-45D8-9C1E-264CD4B06E58" Name="BlockManager.Tests.Shared" />
+  <Module Identifier="33E08508-0E13-4167-B4F6-3F3DE3809D8E" Name="BlogManager.Adapter.Api.Tests" />
+  <Module Identifier="908D05F5-0A0C-4BCA-AD2A-21947F26776B" Name="BlogManager.Adapter.PostgreSQL.Tests" />
+  <Reference Identifier="15E72CA0-CFBA-4287-94E1-28E36A89D098/r:BlogManager.Core" SourceId="15E72CA0-CFBA-4287-94E1-28E36A89D098" Name="BlogManager.Core" TargetId="7E5BBCB4-A417-4933-B923-5E8700D52D51" />
+  <Reference Identifier="41935672-E90D-4389-A133-A52446D2A7D6/r:BlogManager.Core" SourceId="41935672-E90D-4389-A133-A52446D2A7D6" Name="BlogManager.Core" TargetId="7E5BBCB4-A417-4933-B923-5E8700D52D51" />
+  <Reference Identifier="DD90A7BE-E6D2-4AA7-BD41-8DF4D7B53C61/r:BlogManager.Adapter.Api" SourceId="DD90A7BE-E6D2-4AA7-BD41-8DF4D7B53C61" Name="BlogManager.Adapter.Api" TargetId="15E72CA0-CFBA-4287-94E1-28E36A89D098" />
+  <Reference Identifier="DD90A7BE-E6D2-4AA7-BD41-8DF4D7B53C61/r:BlogManager.Adapter.PostgreSQL" SourceId="DD90A7BE-E6D2-4AA7-BD41-8DF4D7B53C61" Name="BlogManager.Adapter.PostgreSQL" TargetId="41935672-E90D-4389-A133-A52446D2A7D6" />
+  <Reference Identifier="DD90A7BE-E6D2-4AA7-BD41-8DF4D7B53C61/r:BlogManager.Core" SourceId="DD90A7BE-E6D2-4AA7-BD41-8DF4D7B53C61" Name="BlogManager.Core" TargetId="7E5BBCB4-A417-4933-B923-5E8700D52D51" />
+  <Reference Identifier="7658A5F0-D343-4B4D-8CE5-DBD2B14E8C2A/r:BlogManager.Adapter.PostgreSQL" SourceId="7658A5F0-D343-4B4D-8CE5-DBD2B14E8C2A" Name="BlogManager.Adapter.PostgreSQL" TargetId="41935672-E90D-4389-A133-A52446D2A7D6" />
+  <Reference Identifier="7658A5F0-D343-4B4D-8CE5-DBD2B14E8C2A/r:BlogManager.Core" SourceId="7658A5F0-D343-4B4D-8CE5-DBD2B14E8C2A" Name="BlogManager.Core" TargetId="7E5BBCB4-A417-4933-B923-5E8700D52D51" />
+  <Reference Identifier="09D01FC4-4AE6-45D8-9C1E-264CD4B06E58/r:BlogManager.Adapter.PostgreSQL" SourceId="09D01FC4-4AE6-45D8-9C1E-264CD4B06E58" Name="BlogManager.Adapter.PostgreSQL" TargetId="41935672-E90D-4389-A133-A52446D2A7D6" />
+  <Reference Identifier="09D01FC4-4AE6-45D8-9C1E-264CD4B06E58/r:BlogManager.Core" SourceId="09D01FC4-4AE6-45D8-9C1E-264CD4B06E58" Name="BlogManager.Core" TargetId="7E5BBCB4-A417-4933-B923-5E8700D52D51" />
+  <Reference Identifier="7658A5F0-D343-4B4D-8CE5-DBD2B14E8C2A/r:BlockManager.Tests.Shared" SourceId="7658A5F0-D343-4B4D-8CE5-DBD2B14E8C2A" Name="BlockManager.Tests.Shared" TargetId="09D01FC4-4AE6-45D8-9C1E-264CD4B06E58" />
+  <Reference Identifier="33E08508-0E13-4167-B4F6-3F3DE3809D8E/r:BlogManager.Core" SourceId="33E08508-0E13-4167-B4F6-3F3DE3809D8E" Name="BlogManager.Core" TargetId="7E5BBCB4-A417-4933-B923-5E8700D52D51" />
+  <Reference Identifier="33E08508-0E13-4167-B4F6-3F3DE3809D8E/r:BlogManager.Adapter.Api" SourceId="33E08508-0E13-4167-B4F6-3F3DE3809D8E" Name="BlogManager.Adapter.Api" TargetId="15E72CA0-CFBA-4287-94E1-28E36A89D098" />
+  <Reference Identifier="908D05F5-0A0C-4BCA-AD2A-21947F26776B/r:BlogManager.Core" SourceId="908D05F5-0A0C-4BCA-AD2A-21947F26776B" Name="BlogManager.Core" TargetId="7E5BBCB4-A417-4933-B923-5E8700D52D51" />
+  <Reference Identifier="908D05F5-0A0C-4BCA-AD2A-21947F26776B/r:BlogManager.Adapter.PostgreSQL" SourceId="908D05F5-0A0C-4BCA-AD2A-21947F26776B" Name="BlogManager.Adapter.PostgreSQL" TargetId="41935672-E90D-4389-A133-A52446D2A7D6" />
+  <Reference Identifier="908D05F5-0A0C-4BCA-AD2A-21947F26776B/r:BlockManager.Tests.Shared" SourceId="908D05F5-0A0C-4BCA-AD2A-21947F26776B" Name="BlockManager.Tests.Shared" TargetId="09D01FC4-4AE6-45D8-9C1E-264CD4B06E58" />
+</ArchitectureGraph>
