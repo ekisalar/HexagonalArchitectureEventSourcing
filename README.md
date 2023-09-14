@@ -4,7 +4,7 @@
 
 ### Technologies and Patterns Used
 - Hexagonal Architecture (Ports and Adapters)
-- Event sourcin wiht Event Store Db
+- Event sourcing with Event Store DB
 - PostgreSQL Database
 - Code-First Auto-Migration DB Update when Application Starts
 - CQRS Pattern with Mediator
@@ -21,7 +21,7 @@
 - Integrate event sourcing along with CQRS for separate read and write databases
 - Extract domain rules from domain entities to dedicated Domain (Business) Services for more robust business rule management
 - Consider the use of application services as opposed to business logic directly within the application
-
+- History of Data Management by Event Sourcing: Extend the current event sourcing capabilities to include more advanced history services, such as an audit trail, rollback functionalities, and analytical capabilities based on historical data.
 ## Architecture
 
 The project is built on a Hexagonal (Ports and Adapters) Architecture and is organized into two main folders:
@@ -50,7 +50,7 @@ The API project serves as the driver side of the application, while the PostgreS
 - Command and Query Handlers are located in the Core project, which also serves as the access point for Repositories.
 - Application project serves as the entry point and thus has dependencies on all other projects to eliminate the API project's direct dependency on PostgreSQL repositories.
 
-![ProArchitectureject](./image/BlogManagerHexagonalArchitectureEventSourcing.png)
+![ProArchitectureject](./image/BlogManagerHexagonalArchitecture.png)
 
 ## Test Coverage
 
